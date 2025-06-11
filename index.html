@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #d6f0ff;
+    }
+
+    h1 {
+      font-family: "Roboto Slab", serif;
+      margin-bottom: 20px;
+    }
+
+    .display {
+      width: 500px;
+      height: 90px;
+      font-size: 2rem;
+      text-align: right;
+      padding: 20px;
+      background-color: snow;
+      border: 1px solid black;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .keypad {
+      width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: black;
+    }
+
+    .key {
+      width: 25%;
+      height: 80px;
+      font-size: 1.5rem;
+      background-color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-sizing: border-box;
+      border: 1px solid black;
+    }
+
+    .key.operator {
+      background-color: lightcoral;
+    }
+
+    .key.clear {
+      width: 100%;
+      background-color: lightgray;
+    }
+
+    .key.highlight {
+      background-color: gray !important;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <div class="display" id="display"></div>
+  <div class="keypad" id="keypad"></div>
+</body>
+</html>
